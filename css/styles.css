@@ -1,147 +1,144 @@
-/* --- Base Styles --- */
+/* --- 1. Element Selectors (Base styles for the whole page) --- */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff0f5; /* Light lavender blush background */
-    color: #333333;
+    font-family: Arial, sans-serif, sans-serif;
     line-height: 1.6;
+    color: #333333;
+    background-color: #f4f6f8;
     margin: 0;
     padding: 0;
 }
 
-/* Header and Title */
 header {
-    background-color: #db7093; /* Pale violet red header */
-    color: white;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 2rem 1rem;
     text-align: center;
-    padding: 20px;
+}
+
+h1, h2 {
+    color: #0f172a;
 }
 
 header h1 {
-    color: white;
-    margin-bottom: 10px;
+    color: #ffffff;
+    margin-bottom: 1rem;
 }
 
-/* Headings */
-h2 {
-    color: #c71585; /* Medium violet red for section titles */
-    border-bottom: 2px solid #ffb6c1;
-    padding-bottom: 5px;
-}
-
-h3 {
-    color: #db7093;
-}
-
-/* --- Navigation & Links --- */
+/* --- Navigation Styling & Hover States --- */
 nav a {
-    color: white;
+    color: #38bdf8;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 8px;
     font-weight: bold;
 }
 
 nav a:hover, nav a:focus {
-    color: #ffe4e1;
+    color: #ffffff;
     text-decoration: underline;
 }
 
-a {
-    color: #c71585;
-}
-
-a:hover {
-    color: #ff1493;
-}
-
-/* --- Class Selector for Repeated Sections (Box Model) --- */
+/* --- 2. Class Selector for Repeated Sections (Box Model with Padding, Margin, Border) --- */
 .content-section {
     background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 2rem;
+    margin: 1.5rem auto;
     max-width: 800px;
-    border: 2px solid #ffb6c1; /* Visible pink border */
+    border: 1px solid #cbd5e1;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* --- ID Selector for Hobbies Section --- */
+/* --- 3. ID Selector for One Unique Section --- */
 #hobbies {
-    background-color: #fff5f8;
-    border-left: 6px solid #c71585;
+    background-color: #f1f5f9;
+    border-left: 6px solid #0284c7;
 }
 
-/* --- Element Selectors for Media --- */
+/* --- 4. Element Selector for Responsive Images and Videos --- */
 img, video {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px auto;
-    border: 2px solid #ffb6c1;
-    border-radius: 5px;
+    margin: 1rem auto;
+    border-radius: 6px;
 }
 
-/* Table Styling */
+/* Gallery Layout Styling */
+.gallery figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.gallery figcaption {
+    font-style: italic;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* --- Table Styling --- */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 caption {
     font-weight: bold;
-    color: #c71585;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     text-align: left;
 }
 
 th, td {
-    border: 1px solid #ffb6c1;
+    border: 1px solid #cbd5e1;
     padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #ffe4e1;
-    color: #c71585;
+    background-color: #e2e8f0;
 }
 
-/* Form Styling */
+/* --- Form and Interactive Button Styling --- */
+form div {
+    margin-bottom: 1rem;
+}
+
 label {
     display: block;
+    margin-bottom: 0.4rem;
     font-weight: bold;
-    margin-top: 10px;
-    color: #c71585;
 }
 
 input, textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ffb6c1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
     border-radius: 4px;
+    font-size: 1rem;
     box-sizing: border-box;
 }
 
 button[type="submit"] {
-    background-color: #c71585;
+    background-color: #0284c7;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.2s;
 }
 
 button[type="submit"]:hover, button[type="submit"]:focus {
-    background-color: #ff1493;
+    background-color: #0369a1;
 }
 
-/* Footer */
+/* --- Footer Styling --- */
 footer {
-    background-color: #db7093;
-    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 1.5rem;
+    background-color: #1e293b;
+    color: #94a3b8;
+    margin-top: 2rem;
 }
