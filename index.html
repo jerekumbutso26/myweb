@@ -18,6 +18,8 @@
             <a href="#learning-plan">Learning Plan</a> |
             <a href="#photos">Photos</a> |
             <a href="#media">Media</a> |
+            <a href="#contact">Contact</a> |
+            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
         </nav>
     </header>
 
@@ -27,9 +29,7 @@
         <!-- Section 1: About Me -->
         <section id="about" class="content-section">
             <h2>About Me</h2>
-            <p>Hello World! This is my first HTML document.
-                 I am currently learning Introduction to Web Technologies. My name is kumbutso jere 202507764.
-                 As an undergraduate student pursuing computer science, I am deeply passionate about understanding how modern software and web systems work under the hood. Building clean, structured, and accessible web pages is an exciting step in my technical journey.</p>
+            <p>Hello World! This is my first HTML document[cite: 2]. I am currently learning Introduction to Web Technologies[cite: 2]. My name is kumbutso jere 202507764[cite: 2]. As an undergraduate student pursuing computer science, I am deeply passionate about understanding how modern software and web systems work under the hood. Building clean, structured, and accessible web pages is an exciting step in my technical journey.</p>
         </section>
 
         <!-- Section 2: Hobbies -->
@@ -120,6 +120,34 @@
             </audio>
             <p>A short audio recording describing my passion for problem-solving and coding.</p>
         </section>
+
+        <!-- Section 6: Contact -->
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p><em>Note: This form is local demonstration only and does not transmit data.</em></p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="topic">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </section>
+
     </main>
 
     <!-- Footer -->
