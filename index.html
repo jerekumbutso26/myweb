@@ -3,156 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kumbutso Jere - Student Portfolio</title>
-    <!-- Link your external stylesheet -->
+    <title>Kumbutso Jere | Student Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
-    <header>
-        <h1>Welcome to the World of Web Programming</h1>
-        <nav>
-            <a href="#about">About Me</a> |
-            <a href="#hobbies">Hobbies</a> |
-            <a href="#learning-plan">Learning Plan</a> |
-            <a href="#photos">Photos</a> |
-            <a href="#media">Media</a> |
-            <a href="#contact">Contact</a> |
-            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+    <!-- Main Header & Navigation -->
+    <header id="site-header">
+        <div class="header-content">
+            <h1>Kumbutso Jere</h1>
+            <p class="tagline">Computer Science & Digital Design Student | Mulungushi University</p>
+        </div>
+        
+        <nav id="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#plan">Learning Plan</a></li>
+                <li><a href="#projects">Projects & Skills</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+
+        <button id="theme-toggle-btn" class="theme-btn" type="button">Switch to Dark Theme</button>
     </header>
 
-    <!-- Main Content Area -->
     <main>
 
-        <!-- Section 1: About Me -->
-        <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>Hello World! This is my first HTML document[cite: 2]. I am currently learning Introduction to Web Technologies[cite: 2]. My name is kumbutso jere 202507764[cite: 2]. As an undergraduate student pursuing computer science, I am deeply passionate about understanding how modern software and web systems work under the hood. Building clean, structured, and accessible web pages is an exciting step in my technical journey.</p>
+        <!-- Intro Hero Area -->
+        <section id="hero" class="hero-section">
+            <div class="hero-card">
+                <h2>Welcome to My Professional Portfolio</h2>
+                <p>Developing modern software solutions, web applications, and computer vision systems.</p>
+                <a href="#projects" class="cta-button">View My Projects</a>
+            </div>
         </section>
 
-        <!-- Section 2: Hobbies -->
+        <!-- About Me Section (>= 50 words) -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Kumbutso Jere, and I am a passionate Computer Science and Digital Design student at Mulungushi University in Zambia. I am dedicated to understanding fundamental computing concepts, software architecture, object-oriented programming, and interactive web development. My primary technical goals center around building robust software applications, exploring computer vision pipelines, and integrating microcontrollers with intelligent hardware systems. I continuously seek opportunities to apply classroom theory to practical engineering challenges.
+            </p>
+        </section>
+
+        <!-- Hobbies Section (At least 3) -->
         <section id="hobbies" class="content-section">
             <h2>My Hobbies</h2>
-            <!-- Fixed hobby list items -->
-            <ul>
-                <li>Gaming</li>
-                <li>Reading</li>
-                <li>Listening to music</li>
+            <ul class="hobbies-list">
+                <li><strong>Automotive Engineering & Mechanics:</strong> Studying engine mechanics, vehicle performance specs, and hands-on maintenance.</li>
+                <li><strong>System Hardware Upgrades:</strong> Customizing personal computers, optimizing laptop storage configurations, and working with hardware modules.</li>
+                <li><strong>Gaming & Audio Production:</strong> Playing console video games and analyzing modern music composition and sound design styles.</li>
             </ul>
         </section>
 
-        <!-- Section 3: Learning Plan -->
-        <section id="learning-plan" class="content-section">
+        <!-- Learning Plan Section (3 steps + table) -->
+        <section id="plan" class="content-section">
             <h2>My Learning Plan</h2>
-            <p>Steps I will take to improve my web skills:</p>
-            <ol>
-                <li>Practice writing semantic HTML tags daily.</li>
-                <li>Build custom CSS stylesheets to master layouts and the box model.</li>
-                <li>Test website responsiveness across different screen widths.</li>
+            
+            <h3>Key Learning Steps</h3>
+            <ol class="plan-steps">
+                <li>Master responsive client-side web technologies (HTML5, CSS layout models, and asynchronous JavaScript).</li>
+                <li>Deepen knowledge of object-oriented programming, data structures, and algorithms in Java and Python.</li>
+                <li>Design and deploy end-to-end computer vision and hardware integration projects using OpenCV and microcontrollers.</li>
             </ol>
 
-            <h3>Weekly Web Learning Schedule</h3>
-            <table>
-                <caption>Weekly Web Technologies Learning Schedule</caption>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Topic</th>
-                        <th>Practice Task</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>HTML Semantics</td>
-                        <td>Restructure main layout elements</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>CSS Styling</td>
-                        <td>Apply colors, fonts, and box models</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Forms and Media</td>
-                        <td>Embed video, audio, and interactive forms</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Weekly Study Schedule</h3>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Course / Subject</th>
+                            <th scope="col">Target Competency</th>
+                            <th scope="col">Weekly Target Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ICT251 Web Technologies</td>
+                            <td>DOM Manipulation, CSS Flexbox/Grid, Responsive Web Design</td>
+                            <td>8 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering & OOP</td>
+                            <td>Java Class Structures, Design Patterns, Git Version Control</td>
+                            <td>7 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Vision & IoT</td>
+                            <td>OpenCV Pipelines, Python Signal Processing, Hardware Interfacing</td>
+                            <td>6 Hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <!-- Section 4: Photos -->
+        <!-- Projects & Skills Section (At least 3 examples) -->
+        <section id="projects" class="content-section">
+            <h2>Projects & Skills</h2>
+            <p>Filter or search through my academic and practical coursework examples below:</p>
+
+            <!-- Search / Filter Feature Controls -->
+            <div class="search-box">
+                <label for="project-search-input" class="visually-hidden">Search Projects:</label>
+                <input type="text" id="project-search-input" placeholder="Search projects or skills (e.g. Java, Vision, CSS)...">
+                <button id="reset-search-btn" type="button" class="btn-secondary">Reset Filter</button>
+            </div>
+
+            <p id="no-search-results" class="no-results-msg hidden">No matching projects or skills found. Try another search term.</p>
+
+            <div class="projects-grid" id="projects-list">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <h3>Interactive Portfolio Website</h3>
+                    <p class="project-tag">Category: Web Technologies</p>
+                    <p class="project-summary">A responsive web portfolio built with semantic HTML5, custom CSS styling, and client-side JavaScript validation features.</p>
+                    <button type="button" class="toggle-details-btn">Show Details</button>
+                    <div class="project-details hidden">
+                        <p><strong>Key Tools:</strong> HTML5, CSS Flexbox/Grid, Vanilla JavaScript, VS Code Live Server, Render Deployment.</p>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <h3>Real-Time Vision & Detection Pipeline</h3>
+                    <p class="project-tag">Category: Computer Vision / AI</p>
+                    <p class="project-summary">A computer vision pipeline utilizing image processing models to detect target items and trigger hardware signals.</p>
+                    <button type="button" class="toggle-details-btn">Show Details</button>
+                    <div class="project-details hidden">
+                        <p><strong>Key Tools:</strong> Python, OpenCV, MATLAB, Arduino Microcontroller.</p>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <h3>Java Object-Oriented Data Structures</h3>
+                    <p class="project-tag">Category: Software Engineering</p>
+                    <p class="project-summary">Implementation of fundamental data structures and algorithmic operations demonstrating core OOP principles.</p>
+                    <button type="button" class="toggle-details-btn">Show Details</button>
+                    <div class="project-details hidden">
+                        <p><strong>Key Tools:</strong> Java, JDK 21, IntelliJ IDEA, Object-Oriented Design.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Photos Section (3 captioned photos) -->
         <section id="photos" class="content-section">
             <h2>My Photos</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="images/photo1.jpeg" alt="Student working on computer setup">
-                    <figcaption>Working on my computer science lab setup.</figcaption>
+            <div class="photo-gallery">
+                <figure class="gallery-item">
+                    <img src="images/photo1.jpeg" alt="Development environment set up on desktop computer with active code editor">
+                    <figcaption>Figure 1: My software development setup during coding sessions.</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/photo2.jpeg" alt="Campus grounds at university">
-                    <figcaption>A snapshot around the university campus.</figcaption>
+
+                <figure class="gallery-item">
+                    <img src="images/photo2.jpeg" alt="Microcontroller and electronic components assembled on a breadboard">
+                    <figcaption>Figure 2: me at fringilla in chisamba.</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/photo3.jpeg" alt="Textbook and notes open for studying">
-                    <figcaption>Reviewing lecture notes and web tech modules.</figcaption>
+
+                <figure class="gallery-item">
+                    <img src="images/photo3.jpeg" alt="Mulungushi University campus building and outdoor study areas">
+                    <figcaption>Figure 3: me at Ngweze mall in katima mulilo Namibia .</figcaption>
                 </figure>
             </div>
         </section>
 
-        <!-- Section 5: Media -->
+        <!-- Media Section (Video & Audio with summaries) -->
         <section id="media" class="content-section">
             <h2>My Media</h2>
             
-            <h3>Introduction Video</h3>
-            <video controls width="320">
-                <source src="videos/intro.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p><strong>Video Summary:</strong> I introduce myself, state my programme, and mention that I hope to learn advanced CSS layout techniques.</p>
+            <div class="media-grid">
+                <article class="media-card">
+                    <h3>Project Walkthrough Video</h3>
+                    <video controls width="100%">
+                        <source src="videos/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="media-description">
+                        <strong>Written Summary:</strong> This short video provides an overview of the interactive user interface, navigation, and visual styling implemented in the portfolio website.
+                    </p>
+                </article>
 
-            <h3>Audio Clip</h3>
-            <audio controls>
-                <source src="videos/voice.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <p>A short audio recording describing my passion for problem-solving and coding.</p>
+                <article class="media-card">
+                    <h3>Audio Commentary</h3>
+                    <audio controls class="audio-player">
+                        <source src="videos/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p class="media-description">
+                        <strong>Written Summary:</strong> An audio recording detailing my academic goals in computer science and key highlights from the Activity 3 project workflow.
+                    </p>
+                </article>
+            </div>
         </section>
 
-        <!-- Section 6: Contact -->
+        <!-- Contact Form Section (Compulsory JS Feature) -->
         <section id="contact" class="content-section">
-            <h2>Contact</h2>
-            <p><em>Note: This form is local demonstration only and does not transmit data.</em></p>
-            <form action="#" method="POST">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <h2>Contact Me</h2>
+            <p class="demo-notice"><strong>Browser demonstration only — no message is sent.</strong></p>
+
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="user-name">Full Name:</label>
+                    <input type="text" id="user-name" name="userName" required>
+                    <span id="name-error" class="field-error" aria-live="polite"></span>
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+
+                <div class="form-group">
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="userEmail" required>
+                    <span id="email-error" class="field-error" aria-live="polite"></span>
                 </div>
-                <div>
-                    <label for="topic">Topic:</label>
-                    <input type="text" id="topic" name="topic">
+
+                <div class="form-group">
+                    <label for="user-message">Message:</label>
+                    <textarea id="user-message" name="userMessage" rows="5" required></textarea>
+                    <span id="message-error" class="field-error" aria-live="polite"></span>
                 </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Submit Form</button>
-                </div>
+
+                <button type="submit" class="submit-btn">Submit Form</button>
             </form>
+
+            <!-- Local Validation Summary Output Container -->
+            <div id="form-preview" class="preview-box hidden" aria-live="polite"></div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Kumbutso Jere. All rights reserved.</p>
+    <!-- Site Footer -->
+    <footer id="site-footer">
+        <p>&copy; 2026 Kumbutso Jere | Mulungushi University - ICT251 Web Technologies</p>
+        <p>
+            <a id="github-source-link" href="https://github.com/jerekumbutso26/myweb" target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+        </p>
     </footer>
 
 </body>
